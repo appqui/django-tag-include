@@ -1,15 +1,19 @@
-# django-tag-include
-Combination of inheritance and include principles.
+# includetag.py
+Django template. Combination of inheritance and include principles.
 
-#Requirements
-Django v1.0+. Created at Summer 2009, so have no idea, if it's working with current build.
+Requirements
+-------
+Django v1.0+. Created at Summer 2009. Have no idea, if it's working with current build.
 
-# Installation
+Installation
+-------
+
 Put file "includetag.py" to your app templatetag directory.
-In template load includetag by load call: {% load includetag %}
-And in place of inclusion - put code, similar to my sample:
 
-```
+In template load includetag by load call: {% load includetag %}
+In place of inclusion - put code, similar to my sample:
+
+```HTML+Django
 {% include "control.html" %}
   {% part one %} put inside {% endpart %}
   {% part two %} put inside one more {% endpart %}
@@ -18,7 +22,7 @@ And in place of inclusion - put code, similar to my sample:
 
 Inside control.html:
 
-```
+```HTML+Django
 <div>
    something in control
    {% part one %}{% endpart %}

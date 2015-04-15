@@ -1,5 +1,5 @@
 # includetag.py
-Django template. Combination of inheritance and include principles.
+Django template tag. Combination of inheritance and include principles.
 
 Requirements
 -------
